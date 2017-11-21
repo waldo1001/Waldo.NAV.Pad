@@ -1,0 +1,15 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "al",
+			"request": "publish",
+			"name": "Local server",
+			"server": "http://devsrv/",
+			"serverInstance": "nav",
+			"tenant": "",
+			"authentication": "UserPassword",
+			"startupObjectId": 22
+		}
+	]
+}
