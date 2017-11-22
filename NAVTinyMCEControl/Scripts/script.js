@@ -1,14 +1,15 @@
 ﻿function InitializeControl(controlid) {
-    //var WaldoNAVPadHTMLEditor = '<div id="WaldoNAVPadControl"></div>';
-    var WaldoNAVPadHTMLEditor = '<textarea id="WaldoNAVPadControl"></textarea>'
+    var WaldoNAVPadHTMLEditor = '<div id="WaldoNAVPadControl"></div>';
+    //var WaldoNAVPadHTMLEditor = '<textarea id="WaldoNAVPadControl"></textarea>'
   
     $('#' + controlid).append(WaldoNAVPadHTMLEditor);
 
     tinymce.init({
         selector: '#WaldoNAVPadControl',
-        min_height: 500,        
+        min_height: "500",
         theme: 'modern',
-
+        //width : "600",  //sets a fixed width
+        
         plugins: [
           'advlist autolink lists link image charmap print preview hr anchor pagebreak',
           'searchreplace wordcount visualblocks visualchars code fullscreen',
@@ -16,6 +17,7 @@
           'emoticons template paste textcolor colorpicker textpattern imagetools',
           'autoresize'
         ],
+
         toolbar1: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
         toolbar2: 'print preview media | forecolor backcolor emoticons',
         //image_advtab: true,
@@ -24,7 +26,7 @@
         //  { title: 'Test template 2', content: 'Test 2' }
         //],
         //resize: true,
-
+        
         //,
         //content_css: [
         //  'http://fast.fonts.net/cssapi/e6dc9b99-64fe-4292-ad98-6974f93cd2a2.css',

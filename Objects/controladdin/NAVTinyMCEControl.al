@@ -5,7 +5,10 @@ controladdin NAVTinyMCEControl {
     StyleSheets = ;
     StartupScript = 'NAVTinyMCEControl\Scripts\startup.js';
 
-    RequestedHeight = 600;
+    RequestedHeight = 700;
+    RequestedWidth = 700;
+    MinimumHeight = 600;
+    MinimumWidth = 600;
     VerticalStretch = true;
     HorizontalStretch = true;
 
