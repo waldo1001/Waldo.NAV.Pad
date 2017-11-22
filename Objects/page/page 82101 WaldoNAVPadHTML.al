@@ -9,11 +9,42 @@ page 82101 "WaldoNAVPad HTML"
     {
       grid(Control1100084005)
       {
-        field(WaldoNAVPad;'')
-        {
-          //The property ControlAddIn is not yet supported
-          ControlAddIn = 'Waldo.NAV.TinyMCEControl;PublicKeyToken=0693cb47ed6631b6';
-        }
+          usercontrol(WaldoNAVPad; NAVTinyMCEControl)
+          {
+            ApplicationArea=All;
+            Visible=true;
+
+            trigger ControlAddInReady();
+            begin
+              ControlAddInReady := TRUE;
+
+              InitializeContent;
+            end;
+
+            trigger GetHTMLReady(value: Text);
+            begin
+              FullHTML := value;
+              //TextHasChanged := FALSE;
+              HTMLSaved := TRUE;
+
+              CloseIfAllSaved;
+            end;
+
+            trigger GetTextReady(value: Text);
+            begin
+              FullText := value;
+              //TextHasChanged := FALSE;
+              TextSaved := TRUE;
+
+              CloseIfAllSaved;
+            end;
+
+            trigger TextHasChanged();
+            begin
+              TextHasChanged := true;
+            end;
+          }
+        
       }
     }
   }
