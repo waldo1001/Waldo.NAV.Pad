@@ -1,4 +1,4 @@
-codeunit 82120 "WaldoNAVPad Test"
+/* codeunit 82120 "WaldoNAVPad Test"
 {
   Subtype = Test;
 
@@ -57,3 +57,4 @@ codeunit 82120 "WaldoNAVPad Test"
   end;
 }
 
+ */
