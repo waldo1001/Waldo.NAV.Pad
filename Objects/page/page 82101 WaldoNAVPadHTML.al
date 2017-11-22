@@ -7,45 +7,42 @@ page 82101 "WaldoNAVPad HTML"
   {
     area(content)
     {
-      grid(Control1100084005)
+      usercontrol(WaldoNAVPad; NAVTinyMCEControl)
       {
-          usercontrol(WaldoNAVPad; NAVTinyMCEControl)
-          {
-            ApplicationArea=All;
-            Visible=true;
+        ApplicationArea=All;
+        Visible=true;
 
-            trigger ControlAddInReady();
-            begin
-              ControlAddInReady := TRUE;
+        trigger ControlAddInReady();
+        begin
+          ControlAddInReady := TRUE;
 
-              InitializeContent;
-            end;
+          InitializeContent;
+        end;
 
-            trigger GetHTMLReady(value: Text);
-            begin
-              FullHTML := value;
-              //TextHasChanged := FALSE;
-              HTMLSaved := TRUE;
+        trigger GetHTMLReady(value: Text);
+        begin
+          FullHTML := value;
+          //TextHasChanged := FALSE;
+          HTMLSaved := TRUE;
 
-              CloseIfAllSaved;
-            end;
+          CloseIfAllSaved;
+        end;
 
-            trigger GetTextReady(value: Text);
-            begin
-              FullText := value;
-              //TextHasChanged := FALSE;
-              TextSaved := TRUE;
+        trigger GetTextReady(value: Text);
+        begin
+          FullText := value;
+          //TextHasChanged := FALSE;
+          TextSaved := TRUE;
 
-              CloseIfAllSaved;
-            end;
+          CloseIfAllSaved;
+        end;
 
-            trigger TextHasChanged();
-            begin
-              TextHasChanged := true;
-            end;
-          }
-        
+        trigger TextHasChanged();
+        begin
+          TextHasChanged := true;
+        end;
       }
+      
     }
   }
 
@@ -100,11 +97,11 @@ page 82101 "WaldoNAVPad HTML"
     }
   }
 
-  trigger OnQueryClosePage(CloseAction : Action) : Boolean;
+/*   trigger OnQueryClosePage(CloseAction : Action) : Boolean;
   begin
     IF TextHasChanged THEN
       EXIT(CONFIRM('Warning, there is unsaved text .. do you really want to close?',FALSE));
-  end;
+  end; */
 
   var
     ControlAddInReady : Boolean;
@@ -145,11 +142,11 @@ page 82101 "WaldoNAVPad HTML"
 
   local procedure ActionSaveAndClose();
   begin
-    CurrPage.WaldoNAVPad.GetText;
-    CurrPage.WaldoNAVPad.GetHTML;
     TextSaved := FALSE;
     HTMLSaved := FALSE;
     CloseWhenSaved := TRUE;
+    CurrPage.WaldoNAVPad.GetText;
+    CurrPage.WaldoNAVPad.GetHTML;
   end;
 
   local procedure ActionCancel();
@@ -183,43 +180,5 @@ page 82101 "WaldoNAVPad HTML"
   begin
     EXIT(DialogResultOK);
   end;
-
-  //event WaldoNAVPad();
-  //begin
-    /*
-    ControlAddInReady := TRUE;
-
-    InitializeContent;
-    */
-  //end;
-
-  //event WaldoNAVPad(value : Text);
-  //begin
-    /*
-    FullHTML := value;
-    //TextHasChanged := FALSE;
-    HTMLSaved := TRUE;
-
-    CloseIfAllSaved;
-    */
-  //end;
-
-  //event WaldoNAVPad(value : Text);
-  //begin
-    /*
-    FullText := value;
-    //TextHasChanged := FALSE;
-    TextSaved := TRUE;
-
-    CloseIfAllSaved;
-    */
-  //end;
-
-  //event WaldoNAVPad();
-  //begin
-    /*
-    TextHasChanged := TRUE;
-    */
-  //end;
 }
 

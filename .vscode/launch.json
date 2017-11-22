@@ -3,7 +3,7 @@
 	"configurations": [
 		{
 			"type": "al",
-			"request": "publish",
+			"request": "launch",
 			"name": "Local server",
 			"server": "http://devsrv/",
 			"serverInstance": "nav",
