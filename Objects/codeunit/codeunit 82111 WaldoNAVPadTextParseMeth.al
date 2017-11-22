@@ -13,26 +13,26 @@ codeunit 82111 "WaldoNAVPad Text Parse Meth"
     OnAfterParseText(Text);
   end;
 
-  local procedure DoParseText(var Text : Text;MaxLength : Integer;var ResultWaldoNAVPadTextBuffer : Record "WaldoNAVPad Text Buffer";var Handled : Boolean);
+  local procedure DoParseText(var myText : Text;MaxLength : Integer;var ResultWaldoNAVPadTextBuffer : Record "WaldoNAVPad Text Buffer";var Handled : Boolean);
   var
     SystemString : Text;
     LineArray : List of [Text];
-    SystemIOStringReader : DotNet "'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.System.IO.StringReader";
     Line : Text;
     LineNo : Integer;
+    char10: char;
+    char13: char;
   begin
     if Handled then exit;
 
-    SystemString := Text;
+    SystemString := myText;
 
     ResultWaldoNAVPadTextBuffer.DELETEALL(false);
 
-    SystemIOStringReader := SystemIOStringReader.StringReader(Text);
-    Line := SystemIOStringReader.ReadLine;
-    while not ISNULL(Line) do begin
-      ProcessLine(LineNo,Line,MaxLength,ResultWaldoNAVPadTextBuffer);
-
-      Line := SystemIOStringReader.ReadLine;
+    char10 := 10;
+    char13 := 13;
+    LineArray := myText.Split(char10,char13);
+    foreach Line in LineArray do begin
+      ProcessLine(LineNo,Line,MaxLength,ResultWaldoNAVPadTextBuffer);      
     end;
   end;
 
