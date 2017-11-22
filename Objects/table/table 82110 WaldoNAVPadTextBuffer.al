@@ -1,8 +1,5 @@
 table 82110 "WaldoNAVPad Text Buffer"
 {
-  // version WaldoNAVPad
-
-
   fields
   {
     field(1;"Line No.";Integer)

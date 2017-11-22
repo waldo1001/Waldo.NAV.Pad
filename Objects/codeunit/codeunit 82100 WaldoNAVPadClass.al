@@ -1,8 +1,5 @@
 codeunit 82100 "WaldoNAVPad Class"
 {
-  // version WaldoNAVPad
-
-
   trigger OnRun();
   begin
   end;

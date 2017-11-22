@@ -1,6 +1,6 @@
 codeunit 82101 "WaldoNAVPad ShowTexts Meth"
 {
-  // version WaldoNAVPad
+
 
 
   trigger OnRun();

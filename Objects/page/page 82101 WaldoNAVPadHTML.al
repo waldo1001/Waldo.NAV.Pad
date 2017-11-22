@@ -1,7 +1,5 @@
 page 82101 "WaldoNAVPad HTML"
 {
-  // version WaldoNAVPad
-
   Caption = 'waldoNAVPad';
   PageType = Card;
 

@@ -1,8 +1,5 @@
 codeunit 82111 "WaldoNAVPad Text Parse Meth"
 {
-  // version WaldoNAVPad
-
-
   trigger OnRun();
   begin
   end;
@@ -18,10 +15,10 @@ codeunit 82111 "WaldoNAVPad Text Parse Meth"
 
   local procedure DoParseText(var Text : Text;MaxLength : Integer;var ResultWaldoNAVPadTextBuffer : Record "WaldoNAVPad Text Buffer";var Handled : Boolean);
   var
-    SystemString : DotNet "'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.System.String";
-    LineArray : DotNet "'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.System.Array";
+    SystemString : Text;
+    LineArray : List of [Text];
     SystemIOStringReader : DotNet "'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.System.IO.StringReader";
-    Line : DotNet "'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.System.String";
+    Line : Text;
     LineNo : Integer;
   begin
     if Handled then exit;
@@ -39,11 +36,11 @@ codeunit 82111 "WaldoNAVPad Text Parse Meth"
     end;
   end;
 
-  local procedure ProcessLine(var LineNo : Integer;var Line : DotNet "'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.System.String";MaxLength : Integer;var ResultWaldoNAVPadTextBuffer : Record "WaldoNAVPad Text Buffer");
+  local procedure ProcessLine(var LineNo : Integer;var Line : Text;MaxLength : Integer;var ResultWaldoNAVPadTextBuffer : Record "WaldoNAVPad Text Buffer");
   var
-    SubString : DotNet "'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.System.String";
+    SubString : Text;
     SpaceIndex : Integer;
-    ResultString : DotNet "'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.System.String";
+    ResultString : Text;
   begin
     while STRLEN(Line) > MaxLength do begin
       SubString := COPYSTR(Line,1,MaxLength);
@@ -53,20 +50,20 @@ codeunit 82111 "WaldoNAVPad Text Parse Meth"
       if SpaceIndex = 0 then //First Character is a space
         SpaceIndex := MaxLength;
       ResultString := SubString;
-      if SpaceIndex < SubString.Length then begin
+      if SpaceIndex < strlen(SubString) then begin
         ResultString := SubString.Substring(0,SpaceIndex);
         AddToBuffer(LineNo,ResultString,ResultWaldoNAVPadTextBuffer.Separator::" ", ResultWaldoNAVPadTextBuffer);
       end else begin
         AddToBuffer(LineNo,ResultString,ResultWaldoNAVPadTextBuffer.Separator::Space, ResultWaldoNAVPadTextBuffer);
       end;
 
-      Line := Line.Remove(0,ResultString.Length);
+      Line := Line.Remove(0,strlen(ResultString));
     end;
 
     AddToBuffer(LineNo,Line,ResultWaldoNAVPadTextBuffer.Separator::"Carriage Return",ResultWaldoNAVPadTextBuffer);
   end;
 
-  local procedure AddToBuffer(var LineNo : Integer;var Line : DotNet "'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.System.String";pSeparator : Integer;var ResultWaldoNAVPadTextBuffer : Record "WaldoNAVPad Text Buffer");
+  local procedure AddToBuffer(var LineNo : Integer;var Line : Text;pSeparator : Integer;var ResultWaldoNAVPadTextBuffer : Record "WaldoNAVPad Text Buffer");
   begin
     LineNo += 1;
 
@@ -77,10 +74,6 @@ codeunit 82111 "WaldoNAVPad Text Parse Meth"
       Separator := pSeparator;
       INSERT;
     end;
-  end;
-
-  local procedure "--- Event Wrapper"();
-  begin
   end;
 
   [IntegrationEvent(false, false)]

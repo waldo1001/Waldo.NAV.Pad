@@ -1,8 +1,5 @@
 codeunit 82103 "WaldoNAVPad TableHasText Meth"
 {
-  // version WaldoNAVPad
-
-
   trigger OnRun();
   begin
   end;

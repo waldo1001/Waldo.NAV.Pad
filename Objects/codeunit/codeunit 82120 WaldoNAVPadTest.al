@@ -1,7 +1,5 @@
 codeunit 82120 "WaldoNAVPad Test"
 {
-  // version WaldoNAVPad
-
   Subtype = Test;
 
   trigger OnRun();

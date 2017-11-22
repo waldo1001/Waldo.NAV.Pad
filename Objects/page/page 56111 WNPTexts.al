@@ -1,7 +1,5 @@
 page 56111 "WNP Texts"
 {
-  // version WaldoNAVPad
-
   PageType = List;
   SourceTable = "WaldoNAVPad Textstore";
 

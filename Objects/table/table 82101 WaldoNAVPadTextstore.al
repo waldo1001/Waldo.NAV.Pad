@@ -1,8 +1,5 @@
 table 82101 "WaldoNAVPad Textstore"
 {
-  // version WaldoNAVPad
-
-
   fields
   {
     field(1;"Entry No";Integer)

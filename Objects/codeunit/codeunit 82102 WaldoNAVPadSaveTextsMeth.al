@@ -1,8 +1,5 @@
 codeunit 82102 "WaldoNAVPad SaveTexts Meth"
 {
-  // version WaldoNAVPad
-
-
   trigger OnRun();
   begin
   end;

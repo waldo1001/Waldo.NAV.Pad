@@ -1,7 +1,5 @@
 page 56110 "WNP Blobs"
 {
-  // version WaldoNAVPad
-
   PageType = List;
   SourceTable = "WaldoNavPad Blobstore";
 

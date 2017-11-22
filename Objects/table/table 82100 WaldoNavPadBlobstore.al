@@ -1,8 +1,5 @@
 table 82100 "WaldoNavPad Blobstore"
 {
-  // version WaldoNAVPad
-
-
   fields
   {
     field(1;"Entry No.";Integer)

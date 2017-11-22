@@ -1,7 +1,5 @@
 codeunit 82200 "Cust. Open WNP Action"
 {
-  // version WaldoNAVPad
-
   TableNo = Customer;
 
   trigger OnRun();

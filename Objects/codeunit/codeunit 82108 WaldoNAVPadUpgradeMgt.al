@@ -1,8 +1,5 @@
 codeunit 82108 "WaldoNAVPad Upgrade Mgt."
 {
-  // version WaldoNAVPad
-
-
   trigger OnRun();
   begin
   end;

@@ -1,8 +1,5 @@
 codeunit 82110 "WaldoNAVPad Text Class"
 {
-  // version WaldoNAVPad
-
-
   trigger OnRun();
   begin
   end;
@@ -11,7 +8,7 @@ codeunit 82110 "WaldoNAVPad Text Class"
     WaldoNAVPadTextBuffer : Record "WaldoNAVPad Text Buffer" temporary;
     MaxLenght : Integer;
     CurrentObjectNr : Integer;
-    CurrentObject : DotNet "'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.System.Object";
+    //CurrentObject : DotNet "'mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'.System.Object";
     CurrentText : Text;
     CurrentHTML : Text;
     CurrentTextIsUpdated : Boolean;

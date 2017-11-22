@@ -1,8 +1,5 @@
 codeunit 82109 "WaldoNAVPad Subscribers"
 {
-  // version WaldoNAVPad
-
-
   trigger OnRun();
   begin
   end;
