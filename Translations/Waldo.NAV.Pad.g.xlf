@@ -1,97 +1,97 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" original="Waldo.NAV.Pad">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="Waldo.NAV.Pad">
     <body>
       <group id="body">
-        <trans-unit id="Codeunit 722594429 - NamedType 3140897755" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Record not initialized.  Please review your code!</source>
-          <note from="Developer" annotates="general" priority="2" />
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 722594429 - NamedType 3654085034" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
-          <source>No text was loaded.</source>
-          <note from="Developer" annotates="general" priority="2" />
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit - Label</note>
-        </trans-unit>
-        <trans-unit id="Page 1997364439 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
-          <source>waldoNAVPad</source>
-          <note from="Developer" annotates="general" priority="2" />
-          <note from="Xliff Generator" annotates="general" priority="3">Page - Page</note>
-        </trans-unit>
-        <trans-unit id="Page 977260612 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
-          <source>waldoNAVPad</source>
-          <note from="Developer" annotates="general" priority="2" />
-          <note from="Xliff Generator" annotates="general" priority="3">Page - Page</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 3843259929 - Action 2956924556 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Open WaldoNAVPad Text</source>
-          <note from="Developer" annotates="general" priority="2" />
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 3843259929 - Action 803096095 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Open WaldoNAVPad HTML</source>
-          <note from="Developer" annotates="general" priority="2" />
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension - Action</note>
-        </trans-unit>
-        <trans-unit id="Table 3668224835 - Field 883711285 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 1029549635 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Entry No.</source>
-          <note from="Developer" annotates="general" priority="2" />
-          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WaldoNAVPad Blobstore - Field Entry No. - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 3668224835 - Field 2897660500 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 1029549635 - Field 2897660500 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Record ID</source>
-          <note from="Developer" annotates="general" priority="2" />
-          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WaldoNAVPad Blobstore - Field Record ID - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 3668224835 - Field 3926698677 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 1029549635 - Field 3926698677 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Blob</source>
-          <note from="Developer" annotates="general" priority="2" />
-          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WaldoNAVPad Blobstore - Field Blob - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 3668224835 - Field 103915345 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 1029549635 - Field 103915345 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>TableNo</source>
-          <note from="Developer" annotates="general" priority="2" />
-          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WaldoNAVPad Blobstore - Field TableNo - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 4235248417 - Field 329134311 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Entry No</source>
-          <note from="Developer" annotates="general" priority="2" />
-          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
-        </trans-unit>
-        <trans-unit id="Table 4235248417 - Field 2897660500 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Record ID</source>
-          <note from="Developer" annotates="general" priority="2" />
-          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
-        </trans-unit>
-        <trans-unit id="Table 4235248417 - Field 2685888861 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Textline</source>
-          <note from="Developer" annotates="general" priority="2" />
-          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
-        </trans-unit>
-        <trans-unit id="Table 4235248417 - Field 673882855 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Separator</source>
-          <note from="Developer" annotates="general" priority="2" />
-          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
-        </trans-unit>
-        <trans-unit id="Table 4235248417 - Field 103915345 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
-          <source>TableNo</source>
-          <note from="Developer" annotates="general" priority="2" />
-          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
-        </trans-unit>
-        <trans-unit id="Table 3334014380 - Field 3320823955 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 3334014380 - Field 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Line No.</source>
-          <note from="Developer" annotates="general" priority="2" />
-          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WaldoNAVPad Text Buffer - Field Line No. - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 3334014380 - Field 2685888861 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 3334014380 - Field 2685888861 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Textline</source>
-          <note from="Developer" annotates="general" priority="2" />
-          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WaldoNAVPad Text Buffer - Field Textline - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 3334014380 - Field 673882855 - Property 2879900210" maxWidth="999" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 3334014380 - Field 673882855 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Separator</source>
-          <note from="Developer" annotates="general" priority="2" />
-          <note from="Xliff Generator" annotates="general" priority="3">Table - Field</note>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WaldoNAVPad Text Buffer - Field Separator - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4235248417 - Field 329134311 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WaldoNAVPad Textstore - Field Entry No - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4235248417 - Field 2897660500 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Record ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WaldoNAVPad Textstore - Field Record ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4235248417 - Field 2685888861 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Textline</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WaldoNAVPad Textstore - Field Textline - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4235248417 - Field 673882855 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Separator</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WaldoNAVPad Textstore - Field Separator - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4235248417 - Field 103915345 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TableNo</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table WaldoNAVPad Textstore - Field TableNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 722594429 - NamedType 2706800192" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Record not initialized.  Please review your code!</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit WaldoNAVPad Class - NamedType NotInitializedErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 722594429 - NamedType 3680677869" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No text was loaded.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit WaldoNAVPad Class - NamedType NoTextWasLoadedErr</note>
+        </trans-unit>
+        <trans-unit id="Page 1997364439 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>WaldoNAVPad</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page WaldoNAVPad - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 977260612 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>WaldoNAVPad</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page WaldoNAVPad HTML - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3843259929 - Action 3689021416 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open WaldoNAVPad Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension pageextension50101 - Action OpenWaldoNAVPadText - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3843259929 - Action 1063142019 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open WaldoNAVPad HTML</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension pageextension50101 - Action OpenWaldoNAVPadTextHTML - Property Caption</note>
         </trans-unit>
       </group>
     </body>

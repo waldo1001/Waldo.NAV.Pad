@@ -17,8 +17,10 @@
   "platform": "11.0.0.0",
   "application": "11.0.0.0",
   "idRange": {
-    "from": 50100,
-    "to": 99999
+    "from": 82100,
+    "to": 82150
   },
-  "features": "TranslationFile"
+  "features": [
+    "TranslationFile"
+  ]
 }
