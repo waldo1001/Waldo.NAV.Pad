@@ -12,6 +12,7 @@ page 82100 "WaldoNAVPad"
                 field(FullText; FullText)
                 {
                     MultiLine = true;
+                    ShowCaption = false;
                 }
             }
         }
