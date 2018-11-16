@@ -56,6 +56,7 @@ page 82101 "WaldoNAVPad HTML"
                 Promoted = true;
                 PromotedCategory = Process;
                 PromotedIsBig = true;
+                ApplicationArea = All;
 
                 trigger OnAction();
                 begin
@@ -68,6 +69,7 @@ page 82101 "WaldoNAVPad HTML"
                 Promoted = true;
                 PromotedCategory = Process;
                 PromotedIsBig = true;
+                ApplicationArea = All;
 
                 trigger OnAction();
                 begin
@@ -80,6 +82,7 @@ page 82101 "WaldoNAVPad HTML"
                 Promoted = true;
                 PromotedCategory = Process;
                 PromotedIsBig = true;
+                ApplicationArea = All;
 
                 trigger OnAction();
                 begin
