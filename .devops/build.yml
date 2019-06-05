@@ -2,7 +2,7 @@ name: $(Build.BuildId)
 
 variables:
   AppVersion: '1.0.[yyyyWW].*'
-  TestFilter: '53000..55000'
+  TestFilter: '82100..82150'
 
 steps:
 - task: NAVMgtDockerStart@1
