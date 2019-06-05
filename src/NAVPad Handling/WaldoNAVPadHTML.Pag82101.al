@@ -99,7 +99,6 @@ page 82101 "WaldoNAVPad HTML"
       end; */
 
     var
-        WaldoNAVPadTextClass: Codeunit "WaldoNAVPad Text Class";
         ControlAddInReady: Boolean;
         TextHasChanged: Boolean;
         HTMLSaved: Boolean;

@@ -7,7 +7,6 @@ codeunit 82110 "WaldoNAVPad Text Class"
     var
         WaldoNAVPadTextBuffer: Record "WaldoNAVPad Text Buffer" temporary;
         MaxLenght: Integer;
-        CurrentObjectNr: Integer;
         CurrentText: Text;
         CurrentHTML: Text;
         CurrentTextIsUpdated: Boolean;
