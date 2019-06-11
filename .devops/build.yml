@@ -35,21 +35,21 @@ steps:
     nav_artifact_app_filter: '*.app'   
     skip_verification: true 
 
-- task: ALOpsAppTest@1
-  displayName: 'Run TestSuite'
-  inputs:
-    usedocker: true
-    import_action: "Skip"
-    testfilter: $(TestFilter)
-    show_available_tests: true
-  continueOnError: true    
+# - task: ALOpsAppTest@1
+#   displayName: 'Run TestSuite'
+#   inputs:
+#     usedocker: true
+#     import_action: "Skip"
+#     testfilter: $(TestFilter)
+#     show_available_tests: true
+#   continueOnError: true    
 
-- task: PublishTestResults@1
-  displayName: 'Publish Test Results **/TestResults.xml'
-  inputs:
-    testResultsFormat: XUnit
-    testResultsFiles: '**/TestResults.xml'
-    testRunTitle: 'BC Test Results: $(Build.BuildId)'
+# - task: PublishTestResults@1
+#   displayName: 'Publish Test Results **/TestResults.xml'
+#   inputs:
+#     testResultsFormat: XUnit
+#     testResultsFiles: '**/TestResults.xml'
+#     testRunTitle: 'BC Test Results: $(Build.BuildId)'
 
 - task: ALOpsDockerRemove@1
   displayName: 'Remove Docker Container'
