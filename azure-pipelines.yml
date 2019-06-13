@@ -1,9 +1,11 @@
 name: $(Build.BuildId)
 
 variables:
-  AppVersion: '1.0.[yyyyWW].*'
-  #TestFilter: '82100..82150'
-  dockerimage: mcr.microsoft.com/businesscentral/sandbox
+- group: 'ALOps Build Pipeline Variables'
+- name: 'AppVersion'
+  value: '1.0.[yyyyWW].*'
+- name: 'dockerimage'
+  value: 'mcr.microsoft.com/businesscentral/sandbox'
 
 pool:
   name: WaldoHetzner
