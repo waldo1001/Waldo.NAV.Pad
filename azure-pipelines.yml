@@ -6,6 +6,9 @@ variables:
   dockerimage: mcr.microsoft.com/businesscentral/sandbox
 
 steps:
+- checkout: self
+  clean: true
+  
 - task: ALOpsDockerStart@1
   inputs:
     docker_image: $(dockerimage)
