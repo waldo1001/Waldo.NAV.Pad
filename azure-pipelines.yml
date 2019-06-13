@@ -5,6 +5,9 @@ variables:
   #TestFilter: '82100..82150'
   dockerimage: mcr.microsoft.com/businesscentral/sandbox
 
+pool:
+ name: WaldoHetzner
+
 steps:
 - checkout: self
   clean: true
