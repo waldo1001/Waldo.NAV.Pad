@@ -54,7 +54,7 @@ steps:
     docker_login: 'Insider Docker Registry'
 
 - task: PublishBuildArtifacts@1
-  enable+d: false
+  enabled: false
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'Base'
