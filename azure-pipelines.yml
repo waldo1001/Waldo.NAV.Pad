@@ -2,7 +2,7 @@ name: $(Build.BuildId)
 
 variables:
   AppVersion: '1.0.[yyyyWW].*'
-  TestFilter: '82100..82150'
+  #TestFilter: '82100..82150'
   dockerimage: mcr.microsoft.com/businesscentral/sandbox
 
 steps:
@@ -34,7 +34,6 @@ steps:
     skip_verification: true 
 
 # - task: ALOpsAppTest@1
-#   displayName: 'Run TestSuite'
 #   inputs:
 #     usedocker: true
 #     import_action: "Skip"
@@ -43,7 +42,6 @@ steps:
 #   continueOnError: true    
 
 # - task: PublishTestResults@1
-#   displayName: 'Publish Test Results **/TestResults.xml'
 #   inputs:
 #     testResultsFormat: XUnit
 #     testResultsFiles: '**/TestResults.xml'
@@ -56,7 +54,7 @@ steps:
     docker_login: 'Insider Docker Registry'
 
 - task: PublishBuildArtifacts@1
-  enabled: false
+  enable+d: false
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'Base'
