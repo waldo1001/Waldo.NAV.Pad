@@ -8,7 +8,7 @@ variables:
 steps:
 - task: ALOpsDockerStart@1
   inputs:
-    docker_image: dockerimage
+    docker_image: $(dockerimage)
     docker_pull: true
     docker_login: 'Insider Docker Registry'
 
