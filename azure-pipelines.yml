@@ -3,11 +3,12 @@ name: $(Build.BuildId)
 variables:
   AppVersion: '1.0.[yyyyWW].*'
   TestFilter: '82100..82150'
+  dockerimage: mcr.microsoft.com/businesscentral/sandbox
 
 steps:
 - task: ALOpsDockerStart@1
   inputs:
-    docker_image: $(bc.dockerimage)
+    docker_image: dockerimage
     docker_pull: true
     docker_login: 'Insider Docker Registry'
 
