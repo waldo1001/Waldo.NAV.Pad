@@ -8,7 +8,7 @@ variables:
   value: 'mcr.microsoft.com/businesscentral/sandbox'
 
 pool:
-  name: WaldoHetzner
+  name: ALOPS-WARP10
 
 steps:
 - checkout: self
