@@ -58,7 +58,7 @@ steps:
 - task: ALOpsDockerRemove@1
   enabled: true
   condition: always()
-  inputs:
+  # inputs:
     # docker_login: 'Insider Docker Registry'
 
 - task: PublishBuildArtifacts@1
