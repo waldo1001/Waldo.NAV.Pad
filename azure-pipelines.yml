@@ -18,7 +18,7 @@ steps:
   inputs:
     docker_image: $(dockerimage)
     docker_pull: true
-    docker_login: 'Insider Docker Registry'
+    # docker_login: 'Insider Docker Registry'
 
 - task: ALOpsDockerWait@1
   inputs:
@@ -59,7 +59,7 @@ steps:
   enabled: true
   condition: always()
   inputs:
-    docker_login: 'Insider Docker Registry'
+    # docker_login: 'Insider Docker Registry'
 
 - task: PublishBuildArtifacts@1
   enabled: false
