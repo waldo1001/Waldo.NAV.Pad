@@ -1,14 +1,14 @@
 name: $(Build.BuildId)
 
 variables:
-- group: 'ALOps Build Pipeline Variables'
+- group: Secrets
 - name: 'AppVersion'
   value: '1.0.[yyyyWW].*'
 - name: 'dockerimage'
   value: 'mcr.microsoft.com/businesscentral/sandbox'
 
 pool:
-  name: Warp10
+  name: WaldoHetzner
 
 steps:
 - checkout: self
