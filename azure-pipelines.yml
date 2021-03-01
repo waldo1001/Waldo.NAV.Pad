@@ -10,7 +10,7 @@ trigger:
     include:
       - master
 
-pool: HOD-DOCKER
+pool: WaldoHetzner
 
 steps:
 - checkout: self
